@@ -121,7 +121,7 @@ public class BranchViewHandler {
     private void createAndShowBranchView(final BranchView branchView, Context appContext, final IBranchViewEvents callback) {
         if (appContext != null && branchView != null) {
             final WebView webView = new WebView(appContext);
-            webView.getSettings().setJavaScriptEnabled(true);
+            webView.getSettings().setJavaScriptEnabled(false);
             if (Build.VERSION.SDK_INT >= 19) {
                 webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
             }
